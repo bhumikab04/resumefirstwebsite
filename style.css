@@ -1,0 +1,213 @@
+body {
+    background-color: rgb(228, 198, 160);
+    overflow-x: hidden;
+  }
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  .navdiv ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .navdiv ul li {
+    margin: 0 20px;
+  }
+  
+  .navdiv ul li a {
+    display: inline-block;
+    padding: 10px 20px;
+    font-family: inherit;
+    font-size: 18px;
+    color: rgba(70, 35, 4, 0.812); /* Button text color */
+    text-decoration: none;
+    border: 2px solid rgba(57, 27, 1, 0.322); /* Border color */
+    border-radius: 5px; /* Rounded corners */
+    background-color: transparent; /* Transparent background */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition */
+  }
+  
+  .navdiv ul li a:hover {
+    background-color: rgba(70, 35, 4, 0.812); /* Background color on hover */
+    color: white; /* Text color on hover */
+  }
+  
+  .navbar {
+    background: rgba(93, 43, 5, 0.347);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding-right: 15px;
+    padding-left: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  
+  .navdiv {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Center the nav items */
+  }
+  
+  
+  
+  section {
+    margin-top: 50px;
+    width: 100%;
+    min-height: 35vh;
+    position: relative;
+    background: linear-gradient(90deg, rgba(155, 122, 63, 0.859), rgb(76, 46, 2));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+  }
+  header {
+    font-family: "Judson", serif;
+  }
+  header h1 {
+    color: rgb(84, 55, 41);
+    text-align: center;
+    margin-top: 30px;
+  margin-bottom: 20px;
+    
+  }
+  .zigzag::before {
+    content: " ";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 20px;
+    display: block;
+    background: linear-gradient(
+        -45deg,
+        transparent 33.33%,
+        black 33.33%,
+        rgb(45, 18, 4) 66.66%,
+        transparent 66.66%
+      ),
+      linear-gradient(
+        45deg,
+        transparent 33.33%,
+        black 33.33%,
+        rgb(52, 24, 4) 66.66%,
+        transparent 66.66%
+      );
+    background-size: 30px 60px;
+    transform: rotate(180deg);
+  }
+  .zigzag::after {
+    content: " ";
+    position: absolute;
+    bottom: 93%;
+    left: 0;
+    width: 100%;
+    height: 20px;
+    display: block;
+    background: linear-gradient(
+        -45deg,
+        transparent 33.33%,
+        black 33.33%,
+        rgb(45, 18, 4) 66.66%,
+        transparent 66.66%
+      ),
+      linear-gradient(
+        45deg,
+        transparent 33.33%,
+        black 33.33%,
+        rgb(52, 24, 4) 66.66%,
+        transparent 66.66%
+      );
+    background-size: 30px 60px;
+  }
+  .zigzag {
+    font-size: 25px;
+  }
+  .section-title {
+    margin-top: 0;
+    color: white;
+    font-size: 2em;
+    font-family: "Kaushan Script", cursive;
+  }
+  .resume {
+    font-size: 75px;
+  }
+  .kaushan-script-regular {
+    font-family: "Kaushan Script", cursive;
+    font-weight: 400;
+    font-style: normal;
+  }
+  .judson-bold {
+    font-family: "Judson", serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  .heading {
+    margin-top: 50px;
+    color: rgb(47, 3, 3);
+    font-weight: 300;
+    text-align: center;
+    font-size: 30px;
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  }
+  .content {
+    margin: 25px 60px;
+    color: rgba(70, 35, 4, 0.812);
+    font-size: 20px;
+  }
+  .contact-info {
+    list-style: none;
+    padding: 0;
+  }
+  .contact-info li {
+    margin-bottom: 5px;
+    font-size: 22px;
+  }
+  .link {
+    color: white;
+  }
+  .link2 {
+    color: rgba(70, 35, 4, 0.812);
+  }
+  ul.tech-stack li,
+  ul.links li {
+    margin-bottom: 10px;
+  }
+  .link-color {
+    color: rgba(70, 35, 4, 0.812);
+  }
+  #Figma {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  #Figma iframe {
+    width: 50%;
+    height: 400px;
+    margin: 20px;
+  }
+  
+  @media only screen and (max-width: 571px) {
+    .section-title {
+      font-size: 30px;
+    }
+    .contact-info li {
+      font-size: 20px;
+    }
+    .zigzag {
+      font-size: 25px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    #Figma iframe {
+      width: 90%;
+      height: 300px;
+      margin: 20px;
+    }
+  }
